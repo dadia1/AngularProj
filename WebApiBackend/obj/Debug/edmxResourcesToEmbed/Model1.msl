@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShowsDataModelStoreContainer" CdmEntityContainer="ShowsDataEntities">
+    <EntitySetMapping Name="MovieLists">
+      <EntityTypeMapping TypeName="ShowsDataModel.MovieList">
+        <MappingFragment StoreEntitySet="MovieList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+          <ScalarProperty Name="MovieInformation" ColumnName="MovieInformation" />
+          <ScalarProperty Name="DescriptionMovie" ColumnName="DescriptionMovie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConnectionLists">
+      <EntityTypeMapping TypeName="ShowsDataModel.ConnectionList">
+        <MappingFragment StoreEntitySet="ConnectionList">
+          <ScalarProperty Name="HallNumber" ColumnName="HallNumber" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListHalls">
+      <EntityTypeMapping TypeName="ShowsDataModel.ListHall">
+        <MappingFragment StoreEntitySet="ListHalls">
+          <ScalarProperty Name="ScreenSize" ColumnName="ScreenSize" />
+          <ScalarProperty Name="chairNumbers" ColumnName="chairNumbers" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
